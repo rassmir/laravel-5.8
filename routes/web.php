@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ContactoController@index')->name('inicio');
+Route::post('/guardaContacto', 'ContactoController@store')->name('guardarContacto');
+Route::get('/eliminar-contacto/{id}','ContactoController@destroy')->name('eliminar.contacto');
+
