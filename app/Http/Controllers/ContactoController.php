@@ -95,8 +95,8 @@ class ContactoController extends Controller
      */
     public function destroy($id)
     {
-        $contactos=Producto::find($id);
+        $contactos=Contacto::find($id);
         $contactos->delete($id);
-        return redirect()->route('contacto.index');
+        return redirect()->route('inicio');
     }
 }

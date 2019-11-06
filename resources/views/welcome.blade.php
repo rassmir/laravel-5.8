@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Contacto</title>
@@ -85,7 +86,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-danger"><a href="{{url('/eliminar-categoria/'.$contacto->id)}}">Eliminar</a></button>
+                                        <button type="button" class="btn btn-danger"><a href="{{url('/eliminar-contacto/'.$contacto->id)}}" style="color: white">Eliminar</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +98,11 @@
         </div>
     </div>
 </div>
-
+<style>
+    .modal-title{
+        color: black;
+    }
+</style>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
